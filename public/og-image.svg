@@ -1,0 +1,7 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#004E92"/>
+  <text x="600" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Flowly</text>
+  <text x="600" y="340" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24">Organize suas tarefas com clareza</text>
+  <circle cx="600" cy="420" r="40" fill="#00C6AE"/>
+  <path d="M580 420L595 435L620 410" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

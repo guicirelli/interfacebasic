@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "brand": "#8B3A3A",
+    "brandDark": "#7C2D2D",
+    "background": "#ffffff",
+    "darkBackground": "#f8fafc",
+    "text": "#1e293b",
+    "textDark": "#475569"
+  },
+  "header": {
+    "sticky": true,
+    "transparent": false,
+    "logoAlign": "center",
+    "showThemeToggle": true
+  },
+  "footer": {
+    "showSocial": true,
+    "showNewsletter": false,
+    "copyright": "© 2025 Flowly. Todos os direitos reservados."
+  }
+}
+

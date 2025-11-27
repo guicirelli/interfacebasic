@@ -1,0 +1,12 @@
+{
+  "brandName": "Flowly",
+  "brandTagline": "Organize suas tarefas com clareza",
+  "brandEmail": "contato@flowly.com.br",
+  "brandPhone": "+55 11 99999-9999",
+  "brandLogo": "/logo.png",
+  "social": {
+    "github": "https://github.com/flowly",
+    "linkedin": "https://linkedin.com/company/flowly",
+    "twitter": "https://twitter.com/flowlyapp"
+  }
+}

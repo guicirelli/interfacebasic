@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #8B3A3A;
+  --color-brand-dark: #7C2D2D;
+  --color-brand-light: #A05252;
+  --color-accent: #10b981;
+  --color-accent-light: #34d399;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Inter Variable", sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1e293b;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--color-brand);
+  color: white;
+  border: 2px solid var(--color-brand);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-brand);
+  color: var(--color-brand);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-brand);
+  color: white;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #475569;
+}
+
+/* Modo escuro desabilitado - apenas tema claro */
+.dark body {
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark .font-heading {
+  color: #1e293b;
+}
+
+.dark .prose {
+  color: #475569;
+}
+
+/* Animação para o TopRibbon */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Logo animado */
+.logo-animated {
+  background: linear-gradient(45deg, #8B3A3A, #10b981, #8B3A3A);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logo-animated:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(139, 58, 58, 0.3));
+}
+
+.logo-animated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #8B3A3A, #10b981, #8B3A3A);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite reverse;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Animação sutil para o logo */
+.logo-subtle-animation {
+  animation: logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
