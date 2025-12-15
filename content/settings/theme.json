@@ -1,11 +1,14 @@
 {
   "colors": {
-    "brand": "#8B3A3A",
-    "brandDark": "#7C2D2D",
-    "background": "#ffffff",
-    "darkBackground": "#f8fafc",
-    "text": "#1e293b",
-    "textDark": "#475569"
+    "brand": "#6A1B32",
+    "brandDark": "#42111F",
+    "brandLight": "#C36B83",
+    "accent": "#0F766E",
+    "accentLight": "#2DD4BF",
+    "background": "#f8fafc",
+    "darkBackground": "#0f172a",
+    "text": "#0f172a",
+    "textMuted": "#475569"
   },
   "header": {
     "sticky": true,

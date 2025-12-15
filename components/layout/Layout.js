@@ -3,8 +3,16 @@ import { useServiceWorker } from '../../lib/useServiceWorker';
 import StructuredData from '../StructuredData';
 import Header from '../ui/Header';
 import Footer from '../ui/Footer';
+import { useLanguage } from '../../src/contexts/LanguageContext';
 
-export default function Layout({ settings, children }) {
+export default function Layout({ settings: settingsProp, children }) {
+  const { settings: contextSettings } = useLanguage();
+  const settings = settingsProp || contextSettings;
+
+  if (!settings) {
+    return <>{children}</>;
+  }
+
   useServiceWorker();
 
   return (
@@ -28,9 +36,9 @@ export default function Layout({ settings, children }) {
       <StructuredData settings={settings} />
 
       <div className="min-h-screen flex flex-col">
-        <Header settings={settings} />
+        <Header />
         <main className="flex-grow">{children}</main>
-        <Footer settings={settings} />
+        <Footer />
       </div>
     </>
   );

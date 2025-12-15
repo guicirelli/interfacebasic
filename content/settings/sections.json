@@ -9,20 +9,20 @@
     "stats": [ { "number": "1.2k", "label": "Usuários ativos" }, { "number": "4.8", "label": "Avaliação média" } ]
   },
   "about": {
-    "title": "Por que escolher o Flowly?",
-    "content": "Criado para profissionais que precisam manter o foco em um mundo cheio de distrações.\n\nO Flowly combina organização visual com funcionalidades práticas para transformar sua lista de tarefas em resultados concretos.",
+    "title": "Do caos de tarefas à semana com propósito",
+    "content": "Quando cada reunião adiciona uma nova demanda, fica fácil perder o que tem impacto real.\n\nO Flowly destaca apenas aquilo que precisa da sua atenção agora, com contraste reforçado e automações que eliminam ajustes manuais.",
     "image": "/about-image.png",
     "bullets": [
-      "Design minimalista que elimina distrações",
-      "Organização inteligente com IA integrada", 
-      "Sincronização automática entre dispositivos",
-      "Relatórios visuais de produtividade",
-      "Integração com suas ferramentas favoritas"
+      "Interface de alto contraste com foco no que é decisivo",
+      "Assistente de IA que reorganiza prioridades em segundos", 
+      "Alertas visuais para prazos e dependências críticas",
+      "Relatórios intuitivos que contam a história da sua semana",
+      "Integrações que conectam equipe e ferramentas em tempo real"
     ]
   },
   "features": {
     "title": "Funcionalidades que fazem a diferença",
-    "subtitle": "Tudo o que você precisa para ser mais produtivo",
+    "subtitle": "Recursos conectados para manter foco, visibilidade e ritmo",
     "items": [
       { "icon": "FiCheckSquare", "title": "Gerenciamento de tarefas", "description": "Crie, organize e acompanhe suas tarefas com status e prioridades.", "microBenefits": ["Redução de 40% no tempo gasto organizando tarefas", "IA aprende seus hábitos automaticamente"] },
       { "icon": "FiCalendar", "title": "Calendário integrado", "description": "Visualize suas tarefas no calendário e receba lembretes oportunos.", "microBenefits": ["Sugerimos sua prioridade do dia automaticamente", "Nunca perca um prazo importante"] },
@@ -34,15 +34,15 @@
   },
   "logos": { "title": "Usado por profissionais em todo o Brasil", "items": ["TechStart", "DesignStudio", "Agência Digital", "Consultoria XYZ", "FreelaHub"] },
   "howItWorks": {
-    "title": "Como funciona",
+    "title": "Como o Flowly guia seu ritmo",
     "steps": [
-      { "icon": "FiUserPlus", "title": "Cadastre-se gratuitamente", "description": "Crie sua conta em segundos e comece a usar imediatamente." },
-      { "icon": "FiPlusCircle", "title": "Adicione suas tarefas", "description": "Inclua tarefas, defina prioridades e organize por projetos." },
-      { "icon": "FiTrendingUp", "title": "Acompanhe seu progresso", "description": "Veja estatísticas e melhore sua produtividade ao longo do tempo." }
+      { "icon": "FiUserPlus", "title": "Mapeie o que precisa acontecer", "description": "Importe tarefas, conecte integrações ou descreva atividades para nossa IA em segundos." },
+      { "icon": "FiPlusCircle", "title": "Receba prioridades automáticas", "description": "A IA destaca o que exige atenção com cores e alertas claros, alinhados com seus objetivos." },
+      { "icon": "FiTrendingUp", "title": "Acompanhe e ajuste com clareza", "description": "Veja métricas e recomendações em cartões de alto contraste e compartilhe com a equipe." }
     ]
   },
   "integrations": { "title": "Integrações disponíveis", "items": ["Google Calendar", "Notion", "Trello", "Slack", "Gmail"] },
-  "demo": { "title": "Veja como funciona", "subtitle": "Experimente uma demonstração interativa do Flowly", "button": "Ver demonstração" },
+  "demo": { "title": "Veja como funciona", "subtitle": "Assista ao painel destacando automaticamente o próximo passo em menos de um minuto.", "button": "Ver demonstração" },
   "testimonials": {
     "title": "O que dizem nossos usuários",
     "items": [

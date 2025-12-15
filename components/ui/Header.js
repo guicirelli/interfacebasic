@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { FiGlobe, FiZap } from 'react-icons/fi';
 import Link from 'next/link';
+import { useLanguage } from '../../src/contexts/LanguageContext';
 
-export default function Header({ settings }) {
+export default function Header() {
+  const { locale, setLocale, availableLocales, settings, t } = useLanguage();
   const [mounted, setMounted] = useState(false);
-  const [language, setLanguage] = useState('pt-BR');
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
 
   useEffect(() => {
@@ -24,14 +25,10 @@ export default function Header({ settings }) {
     };
   }, [showLanguageMenu]);
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'pt-BR' ? 'en-US' : 'pt-BR');
-    setShowLanguageMenu(false);
-  };
-
-  const languages = {
-    'pt-BR': { name: 'Português', flag: '🇧🇷' },
-    'en-US': { name: 'English', flag: '🇺🇸' }
+  const languageNames = t('languages') || {};
+  const languagesWithFlag = {
+    'pt-BR': { label: languageNames['pt-BR'] || 'Português', flag: '🇧🇷' },
+    'en-US': { label: languageNames['en-US'] || 'English', flag: '🇺🇸' }
   };
 
   return (
@@ -42,17 +39,17 @@ export default function Header({ settings }) {
           <Link href="/" className="flex items-center space-x-3 group">
             {/* Ícone da logo */}
             <div className="relative">
-              <div className="w-10 h-10 bg-red-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <div className="w-10 h-10 bg-brand rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <FiZap className="text-white text-xl" />
               </div>
               {/* Efeito de brilho */}
-              <div className="absolute inset-0 bg-red-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-brandLight rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             
             {/* Texto da logo */}
             <div className="flex flex-col">
-              <span className="font-bold text-2xl text-gray-900 group-hover:text-red-600 transition-colors duration-300">
-                Flowly
+              <span className="font-bold text-2xl text-gray-900 group-hover:text-brand transition-colors duração-300">
+                {settings?.business?.brandName || 'Flowly'}
               </span>
             </div>
           </Link>
@@ -64,33 +61,30 @@ export default function Header({ settings }) {
               <button
                 onClick={() => setShowLanguageMenu(!showLanguageMenu)}
                 className="flex items-center space-x-2 hover:text-brand transition-colors"
-                aria-label="Alterar idioma"
+                aria-label={t('header.languageLabel') || 'Change language'}
               >
                 <FiGlobe size={20} />
-                <span className="text-sm font-medium">{languages[language].flag}</span>
+                <span className="text-sm font-medium">{languagesWithFlag[locale]?.flag}</span>
               </button>
               
               {/* Menu de idiomas */}
               {showLanguageMenu && (
-                <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                  <button
-                    onClick={() => { setLanguage('pt-BR'); setShowLanguageMenu(false); }}
-                    className={`w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center space-x-2 ${
-                      language === 'pt-BR' ? 'bg-red-50 text-red-600' : 'text-gray-700'
-                    }`}
-                  >
-                    <span>🇧🇷</span>
-                    <span>Português</span>
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('en-US'); setShowLanguageMenu(false); }}
-                    className={`w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center space-x-2 ${
-                      language === 'en-US' ? 'bg-red-50 text-red-600' : 'text-gray-700'
-                    }`}
-                  >
-                    <span>🇺🇸</span>
-                    <span>English</span>
-                  </button>
+                <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-slate-100 py-2 z-50">
+                  {availableLocales.map((code) => (
+                    <button
+                      key={code}
+                      onClick={() => {
+                        setLocale(code);
+                        setShowLanguageMenu(false);
+                      }}
+                      className={`w-full text-left px-4 py-2 hover:bg-slate-100 flex items-center space-x-2 ${
+                        locale === code ? 'bg-slate-100 text-brand font-semibold' : 'text-gray-700'
+                      }`}
+                    >
+                      <span>{languagesWithFlag[code]?.flag || '🌐'}</span>
+                      <span>{languagesWithFlag[code]?.label || code}</span>
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
@@ -98,13 +92,13 @@ export default function Header({ settings }) {
             {/* Botões de Contato, Login e Cadastro */}
             <div className="flex items-center space-x-3">
               <button className="px-4 py-2 text-gray-600 font-medium hover:text-gray-800 transition-colors">
-                Contato
+                {t('header.contact') || 'Contato'}
               </button>
               <button className="px-4 py-2 text-gray-600 font-medium hover:text-gray-800 transition-colors">
-                Entrar
+                {t('header.login') || 'Entrar'}
               </button>
-              <button className="px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition-colors font-medium">
-                Cadastrar
+              <button className="px-4 py-2 bg-brand text-white rounded-lg hover:bg-brandDark transition-colors font-medium shadow-md">
+                {t('header.signup') || 'Cadastrar'}
               </button>
             </div>
           </div>

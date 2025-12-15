@@ -9,26 +9,29 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Cores principais - Vermelho Marsala
-        brand: '#8B3A3A',        // Vermelho Marsala principal
-        brandDark: '#7C2D2D',    // Marsala escuro
-        brandLight: '#A05252',   // Marsala claro
-        accent: '#10b981',       // Verde moderno (mantido para contraste)
-        accentLight: '#34d399',  // Verde claro
-        
-        // Cores de texto mais suaves
-        text: {
-          primary: '#1e293b',    // Azul escuro suave
-          secondary: '#475569',  // Cinza azulado
-          light: '#ffffff',      // Branco
+        brand: '#6A1B32',
+        brandDark: '#42111F',
+        brandLight: '#C36B83',
+        accent: '#0F766E',
+        accentLight: '#2DD4BF',
+        slate: {
+          950: '#020617',
+          900: '#0f172a',
+          800: '#1e293b',
+          600: '#475569',
+          100: '#f1f5f9',
+          50: '#f8fafc',
         },
-        
-        // Cores de fundo mais claras
-        bg: {
-          primary: '#ffffff',    // Branco
-          secondary: '#f8fafc',  // Cinza muito claro
-          dark: '#f8fafc',       // Modo escuro mais claro
-        }
+        text: {
+          primary: '#0f172a',
+          secondary: '#475569',
+          muted: '#64748b',
+          light: '#ffffff',
+        },
+        surface: {
+          base: '#ffffff',
+          subtle: '#f8fafc',
+        },
       },
       fontFamily: {
         'heading': ['Poppins', 'system-ui', 'sans-serif'],

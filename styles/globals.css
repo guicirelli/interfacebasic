@@ -1,24 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #8B3A3A;
-  --color-brand-dark: #7C2D2D;
-  --color-brand-light: #A05252;
-  --color-accent: #10b981;
-  --color-accent-light: #34d399;
+  --color-brand: #6A1B32;
+  --color-brand-dark: #42111F;
+  --color-brand-light: #C36B83;
+  --color-accent: #0F766E;
+  --color-accent-light: #2DD4BF;
+  --color-text-primary: #0f172a;
+  --color-text-muted: #475569;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8fafc;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   font-family: "Inter Variable", sans-serif;
-  color: #1e293b;
-  background-color: #ffffff;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-subtle);
 }
 
 h1, h2, h3, h4, .font-heading {
   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  color: #1e293b;
+  color: var(--color-text-primary);
 }
 
 .btn {
@@ -31,30 +35,30 @@ h1, h2, h3, h4, .font-heading {
 .btn-primary {
   background-color: var(--color-brand);
   color: white;
-  border: 2px solid var(--color-brand);
+  border: 2px solid var(--color-brand-dark);
+  box-shadow: 0 14px 30px -18px rgba(106, 27, 50, 0.8);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-brand-dark);
-  border-color: var(--color-brand-dark);
-  transform: scale(1.05);
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 20px 40px -20px rgba(66, 17, 31, 0.85);
 }
 
 .btn-outline {
-  border: 2px solid var(--color-brand);
-  color: var(--color-brand);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: white;
   background-color: transparent;
 }
 
 .btn-outline:hover {
-  background-color: var(--color-brand);
+  background-color: rgba(255, 255, 255, 0.12);
   color: white;
 }
 
 .prose {
   font-size: 1rem;
   line-height: 1.75;
-  color: #475569;
+  color: var(--color-text-muted);
 }
 
 /* Modo escuro desabilitado - apenas tema claro */
@@ -91,13 +95,7 @@ h1, h2, h3, h4, .font-heading {
 
 /* Logo animado */
 .logo-animated {
-  background: linear-gradient(45deg, #8B3A3A, #10b981, #8B3A3A);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease-in-out infinite;
-  position: relative;
+  color: var(--color-brand);
   transition: all 0.3s ease;
 }
 
@@ -107,20 +105,7 @@ h1, h2, h3, h4, .font-heading {
 }
 
 .logo-animated::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, #8B3A3A, #10b981, #8B3A3A);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease-in-out infinite reverse;
-  opacity: 0.3;
-  z-index: -1;
+  content: none;
 }
 
 /* Animação sutil para o logo */
@@ -137,14 +122,3 @@ h1, h2, h3, h4, .font-heading {
   }
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}

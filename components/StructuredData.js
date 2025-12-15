@@ -1,6 +1,12 @@
 import Head from 'next/head';
+import { useLanguage } from '../src/contexts/LanguageContext';
 
-export default function StructuredData({ settings }) {
+export default function StructuredData({ settings: settingsProp }) {
+  const { settings: contextSettings } = useLanguage();
+  const settings = settingsProp || contextSettings;
+
+  if (!settings) return null;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",

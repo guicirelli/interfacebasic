@@ -7,10 +7,15 @@ export default function StepsSection({ steps = [] }) {
       {steps.map((step, i) => {
         const Icon = Icons[step.icon] || Icons.FiCheckCircle;
         return (
-          <div key={i} className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm">
-            <div className="text-brand text-3xl mb-3"><Icon /></div>
+          <div
+            key={i}
+            className="bg-white border border-surface-subtle rounded-xl p-6 shadow-sm hover:shadow-lg transition"
+          >
+            <div className="text-brand text-3xl mb-3">
+              <Icon />
+            </div>
             <h4 className="font-bold text-lg mb-2">{step.title}</h4>
-            <p className="text-gray-600">{step.description}</p>
+            <p className="text-text-secondary">{step.description}</p>
           </div>
         );
       })}
