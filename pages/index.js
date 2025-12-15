@@ -79,28 +79,23 @@ export default function Home() {
       )}
 
       {/* HERO */}
-      <PageSection id="hero" bgColor="bg-brand text-white" vPadding="py-20">
+      <PageSection id="hero" bgColor="bg-brand text-white" vPadding="py-12 sm:py-16 md:py-20 lg:py-20 xl:py-24 2xl:py-28">
         <AnimatedSection animation="slideUp">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 xl:gap-16 items-center">
               {/* Conteúdo Principal */}
-              <div className="text-center lg:text-left space-y-6">
-                {hero.eyebrow && (
-                  <span className="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-                    {hero.eyebrow}
-                  </span>
-                )}
-                <h1 className="text-4xl md:text-5xl font-bold font-heading leading-tight" style={{ color: 'white' }}>
+              <div className="text-center lg:text-left space-y-4 sm:space-y-4 md:space-y-5 lg:space-y-5">
+                <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold font-heading leading-tight tracking-tight" style={{ 
+                  color: '#FFFFFF',
+                  WebkitTextStroke: '0.5px #000000',
+                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8)',
+                  letterSpacing: '-0.02em'
+                }}>
                   {hero.title}
-                  {hero.highlight && (
-                    <span className="block text-3xl md:text-4xl mt-1" style={{ color: 'white' }}>
-                      {hero.highlight}
-                    </span>
-                  )}
                 </h1>
 
                 {hero.description && (
-                  <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto lg:mx-0">
+                  <p className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                     {hero.description}
                   </p>
                 )}
@@ -109,14 +104,14 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start gap-3 sm:gap-4">
                   <button
                     onClick={() => setDemoModalOpen(true)}
-                    className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-brand font-semibold rounded-xl shadow-lg shadow-black/20 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200"
+                    className="flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4 xl:px-10 xl:py-4 text-sm sm:text-base md:text-base lg:text-base bg-white text-brand font-semibold rounded-xl shadow-lg shadow-black/20 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200"
                   >
                     <FiPlay className="text-brandDark" /> {hero.ctaPrimary || 'Ver demonstração'}
                   </button>
                   {hero.ctaSecondary && (
                     <a
                       href="#login"
-                      className="px-8 py-4 rounded-xl border border-white/35 text-white font-semibold backdrop-blur-sm hover:bg-white/10 hover:border-white/40 transition-colors duration-200 text-center"
+                      className="px-6 py-3 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4 xl:px-10 xl:py-4 text-sm sm:text-base md:text-base lg:text-base rounded-xl border border-white/35 text-white font-semibold backdrop-blur-sm hover:bg-white/10 hover:border-white/40 transition-colors duration-200 text-center"
                     >
                       {hero.ctaSecondary}
                     </a>
@@ -124,7 +119,7 @@ export default function Home() {
                 </div>
 
                 {/* Prova social */}
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-white/80 text-sm pt-2">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-white/80 text-sm md:text-base pt-2">
                   <div className="flex items-center gap-3">
                     <div className="flex -space-x-2">
                       <div className="w-8 h-8 rounded-full border border-white/60 bg-white/15 backdrop-blur-sm"></div>
@@ -141,64 +136,64 @@ export default function Home() {
               </div>
 
               {/* Dashboard de alta visibilidade */}
-              <div className="relative">
-                <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20 overflow-hidden shadow-2xl">
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white">
-                    <div className="w-full p-6" style={{ height: '580px', overflow: 'hidden' }}>
+              <div className="relative mt-8 lg:mt-0">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-white/20 overflow-hidden shadow-2xl">
+                  <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl bg-white">
+                    <div className="w-full p-4 sm:p-6 md:p-8" style={{ minHeight: '400px', height: 'auto', maxHeight: '580px', overflow: 'hidden' }}>
                       {/* Header Funcional */}
-                      <div className="flex items-center justify-between mb-4 pb-3 border-b-2 border-slate-100">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-brand rounded-xl flex items-center justify-center shadow-md">
-                            <span className="text-white font-bold">F</span>
+                      <div className="flex items-center justify-between mb-3 sm:mb-4 pb-2 sm:pb-3 border-b-2 border-slate-100">
+                        <div className="flex items-center space-x-2 sm:space-x-3">
+                          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-brand rounded-xl flex items-center justify-center shadow-md">
+                            <span className="text-white font-bold text-sm sm:text-base">F</span>
                           </div>
                           <div>
-                            <h3 className="font-bold text-slate-900 text-lg">Dashboard Flowly</h3>
+                            <h3 className="font-bold text-slate-900 text-sm sm:text-base md:text-lg">Dashboard Flowly</h3>
                             <p className="text-xs text-slate-500">15 de Dezembro, 2024</p>
                           </div>
                         </div>
                       </div>
 
                       {/* BLOCO 1: Métricas Rápidas - Layout Horizontal Prático */}
-                      <div className="mb-4">
-                        <div className="grid grid-cols-4 gap-3">
+                      <div className="mb-3 sm:mb-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
                           {/* Concluídas */}
-                          <div className="bg-white rounded-lg p-3 border-l-4 border-accent shadow-sm">
+                          <div className="bg-white rounded-lg p-2 sm:p-3 border-l-4 border-accent shadow-sm">
                             <div className="flex items-center justify-between mb-1">
-                              <FiCheck className="text-accent" size={18} />
-                              <span className="text-xs text-slate-900">{heroMetrics.completed?.timestamp}</span>
+                              <FiCheck className="text-accent" size={16} style={{ minWidth: '16px' }} />
+                              <span className="text-xs text-slate-900 truncate ml-1">{heroMetrics.completed?.timestamp}</span>
                             </div>
-                            <div className="text-2xl font-bold text-slate-900">{heroMetrics.completed?.value}</div>
-                            <div className="text-xs text-slate-900 font-medium">{heroMetrics.completed?.label}</div>
+                            <div className="text-xl sm:text-2xl font-bold text-slate-900">{heroMetrics.completed?.value}</div>
+                            <div className="text-xs text-slate-900 font-medium truncate">{heroMetrics.completed?.label}</div>
                           </div>
 
                           {/* Em Andamento */}
-                          <div className="bg-white rounded-lg p-3 border-l-4 border-brand shadow-sm">
+                          <div className="bg-white rounded-lg p-2 sm:p-3 border-l-4 border-brand shadow-sm">
                             <div className="flex items-center justify-between mb-1">
-                              <FiClock className="text-brand" size={18} />
-                              <span className="text-xs text-slate-900">{heroMetrics.inProgress?.timestamp}</span>
+                              <FiClock className="text-brand" size={16} style={{ minWidth: '16px' }} />
+                              <span className="text-xs text-slate-900 truncate ml-1">{heroMetrics.inProgress?.timestamp}</span>
                             </div>
-                            <div className="text-2xl font-bold text-slate-900">{heroMetrics.inProgress?.value}</div>
-                            <div className="text-xs text-slate-900 font-medium">{heroMetrics.inProgress?.label}</div>
+                            <div className="text-xl sm:text-2xl font-bold text-slate-900">{heroMetrics.inProgress?.value}</div>
+                            <div className="text-xs text-slate-900 font-medium truncate">{heroMetrics.inProgress?.label}</div>
                           </div>
 
                           {/* Pendentes */}
-                          <div className="bg-white rounded-lg p-3 border-l-4 border-accent shadow-sm">
+                          <div className="bg-white rounded-lg p-2 sm:p-3 border-l-4 border-accent shadow-sm">
                             <div className="flex items-center justify-between mb-1">
-                              <FiFileText className="text-accent" size={18} />
-                              <span className="text-xs text-slate-900">{heroMetrics.pending?.timestamp}</span>
+                              <FiFileText className="text-accent" size={16} style={{ minWidth: '16px' }} />
+                              <span className="text-xs text-slate-900 truncate ml-1">{heroMetrics.pending?.timestamp}</span>
                             </div>
-                            <div className="text-2xl font-bold text-slate-900">{heroMetrics.pending?.value}</div>
-                            <div className="text-xs text-slate-900 font-medium">{heroMetrics.pending?.label}</div>
+                            <div className="text-xl sm:text-2xl font-bold text-slate-900">{heroMetrics.pending?.value}</div>
+                            <div className="text-xs text-slate-900 font-medium truncate">{heroMetrics.pending?.label}</div>
                           </div>
 
                           {/* Urgentes */}
-                          <div className="bg-white rounded-lg p-3 border-l-4 border-brand shadow-sm">
+                          <div className="bg-white rounded-lg p-2 sm:p-3 border-l-4 border-brand shadow-sm">
                             <div className="flex items-center justify-between mb-1">
-                              <FiZap className="text-brand" size={18} />
-                              <span className="text-xs text-slate-900">{heroMetrics.urgent?.timestamp}</span>
+                              <FiZap className="text-brand" size={16} style={{ minWidth: '16px' }} />
+                              <span className="text-xs text-slate-900 truncate ml-1">{heroMetrics.urgent?.timestamp}</span>
                             </div>
-                            <div className="text-2xl font-bold text-slate-900">{heroMetrics.urgent?.value}</div>
-                            <div className="text-xs text-slate-900 font-medium">{heroMetrics.urgent?.label}</div>
+                            <div className="text-xl sm:text-2xl font-bold text-slate-900">{heroMetrics.urgent?.value}</div>
+                            <div className="text-xs text-slate-900 font-medium truncate">{heroMetrics.urgent?.label}</div>
                           </div>
                         </div>
                       </div>
@@ -270,16 +265,16 @@ export default function Home() {
                           </div>
 
                           {/* Tarefa 3: Agendada */}
-                          <div className="bg-white rounded-lg p-3 border-l-4 border-brandDark shadow-sm hover:shadow-md transition">
+                          <div className="bg-white rounded-lg p-3 border-l-4 border-accent shadow-sm hover:shadow-md transition">
                             <div className="flex items-start justify-between">
                               <div className="flex items-start gap-3 flex-1">
-                                <div className="w-8 h-8 bg-brand/10 rounded-lg flex items-center justify-center mt-0.5 flex-shrink-0">
-                                  <FiCalendar className="text-brand" size={16} />
+                                <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center mt-0.5 flex-shrink-0">
+                                  <FiCalendar className="text-accent" size={16} />
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center gap-2 mb-1">
                                     <h5 className="text-sm font-bold text-slate-900">{heroTasksCopy.scheduled?.title}</h5>
-                                    <span className="px-2 py-0.5 bg-brand/10 text-brand text-xs font-semibold rounded">
+                                    <span className="px-2 py-0.5 bg-accent/10 text-accent text-xs font-semibold rounded">
                                       {heroTasksCopy.scheduled?.badge}
                                     </span>
                                   </div>
@@ -579,41 +574,41 @@ export default function Home() {
         <AnimatedSection animation="scaleIn">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-heading">
-              Pronto para ser mais produtivo?
+              {loginCopy.title || 'Ready to become more productive?'}
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Junte-se a milhares de usuários que já transformaram sua produtividade com IA.
+              {loginCopy.description || 'Join thousands of people who already transformed their productivity with AI.'}
             </p>
             
             {/* Login Form */}
             <div className="max-w-md mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <h3 className="text-2xl font-bold mb-6">
-                  Criar conta grátis
+                  {loginCopy.formTitle || 'Create a free account'}
                 </h3>
                 
                 <form className="space-y-4">
                   <input
                     type="email"
-                    placeholder="Seu melhor e-mail"
+                    placeholder={loginCopy.emailPlaceholder || 'Your best email'}
                     className="w-full px-4 py-3 rounded-lg text-white placeholder-white/70 bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
                   />
                   <input
                     type="password"
-                    placeholder="Crie uma senha"
+                    placeholder={loginCopy.passwordPlaceholder || 'Create a password'}
                     className="w-full px-4 py-3 rounded-lg text-white placeholder-white/70 bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
                   />
                   <button
                     type="submit"
                     className="w-full px-6 py-3 bg-white text-brand font-bold rounded-lg hover:bg-white/90 transition-colors"
                   >
-                    🚀 Começar grátis agora
+                    {loginCopy.submit || '🚀 Start for free now'}
                   </button>
                 </form>
                 
                 <div className="mt-6 text-center">
                   <p className="text-sm opacity-75 mb-4">
-                    Não é necessário cartão de crédito
+                    {loginCopy.benefits?.noCard || 'No credit card required'}
                   </p>
                   <div className="flex items-center justify-center space-x-4 text-sm">
                     <div className="flex items-center space-x-2">
@@ -622,7 +617,7 @@ export default function Home() {
                         <div className="w-6 h-6 bg-white/20 rounded-full border border-white/40"></div>
                         <div className="w-6 h-6 bg-white/20 rounded-full border border-white/40"></div>
                       </div>
-                      <span className="opacity-90">+1.2k usuários ativos</span>
+                      <span className="opacity-90">{loginCopy.benefits?.users || '+1.2k active users'}</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <div className="flex">
@@ -630,7 +625,7 @@ export default function Home() {
                           <FiStar key={i} className="text-accentLight fill-current" size={16} />
                         ))}
                       </div>
-                      <span className="opacity-90">4.8/5 avaliação</span>
+                      <span className="opacity-90">{loginCopy.benefits?.rating || '4.8/5 rating'}</span>
                     </div>
                   </div>
                 </div>

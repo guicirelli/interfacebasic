@@ -108,12 +108,12 @@ export default function DemoModal({ isOpen, onClose }) {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.9, opacity: 0 }}
-          className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+          className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl border border-slate-200"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900">
+          <div className="flex items-center justify-between p-6 border-b-2 border-slate-200 bg-slate-50">
+            <h3 className="text-2xl font-bold text-slate-900">
               {demoCopy.title || 'Demonstração Interativa'}
             </h3>
             <button
@@ -153,10 +153,10 @@ export default function DemoModal({ isOpen, onClose }) {
                       }}
                       className={`p-4 rounded-lg border-2 transition-all ${
                         index === currentStep
-                          ? 'border-brand bg-brand bg-opacity-5'
+                          ? 'border-brand bg-brand/10'
                           : index < currentStep
-                          ? 'border-green-300 bg-green-50 dark:bg-green-900 dark:bg-opacity-20'
-                          : 'border-gray-200 dark:border-gray-700'
+                          ? 'border-accent bg-accent/10'
+                          : 'border-slate-300 bg-white'
                       }`}
                     >
                       <div className="flex items-center gap-3">
@@ -164,16 +164,16 @@ export default function DemoModal({ isOpen, onClose }) {
                           index === currentStep
                             ? 'bg-brand text-white'
                             : index < currentStep
-                            ? 'bg-green-500 text-white'
-                            : 'bg-gray-100 text-gray-500'
+                            ? 'bg-accent text-white'
+                            : 'bg-slate-200 text-slate-600'
                         }`}>
                           {step.icon}
                         </div>
                         <div>
-                          <h4 className="font-semibold text-gray-900">
+                          <h4 className="font-semibold text-slate-900">
                             {step.title}
                           </h4>
-                          <p className="text-sm text-gray-600">
+                          <p className="text-sm text-slate-700">
                             {step.description}
                           </p>
                         </div>
@@ -185,10 +185,10 @@ export default function DemoModal({ isOpen, onClose }) {
 
               {/* Right side - Mock interface */}
               <div>
-                <div className="bg-gray-50 rounded-lg p-4 h-96 border border-gray-200">
+                <div className="bg-slate-50 rounded-lg p-4 h-96 border-2 border-slate-200">
                   <div className="flex items-center justify-between mb-4">
-                    <h4 className="font-semibold text-gray-900">{demoCopy.listTitle || 'Suas Tarefas'}</h4>
-                    <div className="text-sm text-gray-600">
+                    <h4 className="font-semibold text-slate-900">{demoCopy.listTitle || 'Suas Tarefas'}</h4>
+                    <div className="text-sm text-slate-700 font-medium">
                       {tasks.length}{' '}
                       {tasks.length === 1
                         ? (demoCopy.taskCount?.singular || 'tarefa')
@@ -204,12 +204,12 @@ export default function DemoModal({ isOpen, onClose }) {
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
-                          className={`p-3 rounded-lg border transition-all ${
+                          className={`p-3 rounded-lg border-2 transition-all ${
                             task.status === 'completed'
-                              ? 'border-accent bg-accent/10 dark:bg-accent/20'
+                              ? 'border-accent bg-accent/10'
                               : task.status === 'scheduled'
-                              ? 'border-brand/40 bg-brand/10 dark:bg-brandDark/30'
-                              : 'border-gray-300 bg-white dark:bg-gray-700'
+                              ? 'border-brand bg-brand/10'
+                              : 'border-slate-300 bg-white'
                           }`}
                         >
                           <div className="flex items-center justify-between">
@@ -219,8 +219,8 @@ export default function DemoModal({ isOpen, onClose }) {
                                   task.status === 'completed'
                                     ? 'bg-accent border-accent'
                                     : task.status === 'in-progress'
-                                    ? 'border-brand'
-                                    : 'border-gray-300'
+                                    ? 'border-brand bg-brand/10'
+                                    : 'border-slate-400 bg-white'
                                 }`}
                               >
                                 {task.status === 'completed' && (
@@ -229,8 +229,8 @@ export default function DemoModal({ isOpen, onClose }) {
                               </div>
                               <span className={`font-medium ${
                                 task.status === 'completed'
-                                  ? 'line-through text-gray-500'
-                                  : 'text-gray-900'
+                                  ? 'line-through text-slate-500'
+                                  : 'text-slate-900'
                               }`}>
                                 {task.title}
                               </span>
@@ -242,7 +242,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 </span>
                               )}
                               {task.date && (
-                                <span className="text-xs text-gray-500">
+                                <span className="text-xs text-slate-600 font-medium">
                                   {task.date}
                                 </span>
                               )}
@@ -253,9 +253,9 @@ export default function DemoModal({ isOpen, onClose }) {
                     </AnimatePresence>
 
                     {tasks.length === 0 && (
-                      <div className="text-center text-gray-500 py-8">
-                        <FiPlusCircle className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                        <p>{demoCopy.empty || 'Clique em "Iniciar Demonstração" para ver como funciona'}</p>
+                      <div className="text-center text-slate-700 py-8">
+                        <FiPlusCircle className="w-12 h-12 mx-auto mb-2 text-slate-400" />
+                        <p className="font-medium">{demoCopy.empty || 'Clique em "Iniciar Demonstração" para ver como funciona'}</p>
                       </div>
                     )}
                   </div>

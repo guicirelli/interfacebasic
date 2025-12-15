@@ -9,22 +9,22 @@ export default function Footer() {
   const links = footerCopy.links || [];
 
   return (
-    <footer className="bg-white text-gray-900 py-12 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-white text-gray-900 py-8 sm:py-10 md:py-12 lg:py-16 border-t border-gray-200">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {/* Brand */}
-          <div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-900">{settings?.business?.brandName}</h3>
-            <p className="text-gray-600">{settings?.business?.brandTagline}</p>
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-gray-900">{settings?.business?.brandName}</h3>
+            <p className="text-sm sm:text-base text-gray-600">{settings?.business?.brandTagline}</p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-bold mb-4 text-gray-900">{footerCopy.quickLinks || 'Links'}</h4>
+            <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg text-gray-900">{footerCopy.quickLinks || 'Links'}</h4>
             <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="hover:text-brand transition-colors text-gray-600">
+                  <a href={link.href} className="hover:text-brand transition-colors text-sm sm:text-base text-gray-600">
                     {link.label}
                   </a>
                 </li>
@@ -34,25 +34,25 @@ export default function Footer() {
 
           {/* Contact & Social */}
           <div>
-            <h4 className="font-bold mb-4 text-gray-900">{t('header.contact') || 'Contato'}</h4>
-            <p className="text-gray-600 mb-2">{settings?.business?.brandEmail}</p>
-            <p className="text-gray-600 mb-4">{settings?.business?.brandPhone}</p>
+            <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg text-gray-900">{t('header.contact') || 'Contato'}</h4>
+            <p className="text-sm sm:text-base text-gray-600 mb-2">{settings?.business?.brandEmail}</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-4">{settings?.business?.brandPhone}</p>
             
             {settings?.theme?.footer?.showSocial && (
-              <div className="flex space-x-4">
+              <div className="flex space-x-3 sm:space-x-4">
                 {social.github && (
                   <a href={social.github} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
-                    <FiGithub size={24} />
+                    <FiGithub size={20} className="sm:w-6 sm:h-6" />
                   </a>
                 )}
                 {social.linkedin && (
                   <a href={social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
-                    <FiLinkedin size={24} />
+                    <FiLinkedin size={20} className="sm:w-6 sm:h-6" />
                   </a>
                 )}
                 {social.twitter && (
                   <a href={social.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
-                    <FiTwitter size={24} />
+                    <FiTwitter size={20} className="sm:w-6 sm:h-6" />
                   </a>
                 )}
               </div>
@@ -60,9 +60,9 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h4 className="font-bold mb-4 text-gray-900">{newsletterCopy.title || 'Newsletter'}</h4>
-            <p className="text-gray-600 mb-4 text-sm">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg text-gray-900">{newsletterCopy.title || 'Newsletter'}</h4>
+            <p className="text-sm sm:text-base text-gray-600 mb-4">
               {newsletterCopy.description}
             </p>
             
@@ -70,24 +70,24 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder={newsletterCopy.placeholder || ''}
-                className="w-full px-3 py-2 rounded-lg text-gray-900 placeholder-gray-500 bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base rounded-lg text-gray-900 placeholder-gray-500 bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
               />
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-brand text-white font-semibold rounded-lg hover:bg-brandDark transition-colors"
+                className="w-full px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-brand text-white font-semibold rounded-lg hover:bg-brandDark transition-colors"
               >
                 {newsletterCopy.button || 'OK'}
               </button>
             </form>
             
-            <p className="text-xs text-gray-500 mt-2">
+            <p className="text-xs sm:text-sm text-gray-500 mt-2">
               {newsletterCopy.disclaimer}
             </p>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
-          <p>{settings?.theme?.footer?.copyright}</p>
+        <div className="border-t border-gray-200 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-sm sm:text-base text-gray-600">
+          <p>{footerCopy.copyright || settings?.theme?.footer?.copyright}</p>
         </div>
       </div>
     </footer>

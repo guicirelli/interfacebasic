@@ -4,7 +4,7 @@
   --color-brand: #6A1B32;
   --color-brand-dark: #42111F;
   --color-brand-light: #C36B83;
-  --color-accent: #0F766E;
+  --color-accent: #0B5D56;
   --color-accent-light: #2DD4BF;
   --color-text-primary: #0f172a;
   --color-text-muted: #475569;
@@ -12,12 +12,53 @@
   --color-surface-subtle: #f8fafc;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Inter Variable", sans-serif;
   color: var(--color-text-primary);
   background-color: var(--color-surface-subtle);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 h1, h2, h3, h4, .font-heading {

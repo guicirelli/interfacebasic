@@ -18,6 +18,7 @@ export default function Layout({ settings: settingsProp, children }) {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <title>{settings.general.seoTitle}</title>
         <meta name="description" content={settings.general.seoDescription} />
         <meta property="og:title" content={settings.general.seoTitle} />

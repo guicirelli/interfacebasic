@@ -1,0 +1,159 @@
+{
+  "languageLabel": "Português",
+  "languages": {
+    "pt-BR": "Português",
+    "en-US": "English"
+  },
+  "header": {
+    "contact": "Contato",
+    "login": "Entrar",
+    "signup": "Cadastrar",
+    "languageLabel": "Alterar idioma"
+  },
+  "hero": {
+    "metrics": {
+      "completed": { "label": "Concluídas", "value": "12", "timestamp": "Hoje" },
+      "inProgress": { "label": "Em andamento", "value": "3", "timestamp": "Ativo" },
+      "pending": { "label": "Pendentes", "value": "5", "timestamp": "Aguardando" },
+      "urgent": { "label": "Urgentes", "value": "2", "timestamp": "Urgente" },
+      "productivity": { "label": "Produtividade", "value": "+127%", "trend": "↑ +127%" }
+    },
+    "tasks": {
+      "progress": "3 de 5 concluídas",
+      "addButton": "Nova tarefa",
+      "completed": { "title": "Reunião com cliente", "badge": "Concluída", "detail": "Finalizada" },
+      "inProgress": { "title": "Relatório mensal", "badge": "Em andamento" },
+      "scheduled": { "title": "Apresentação para diretoria", "badge": "Agendada" }
+    },
+    "sync": "Sincronizado",
+    "floatingTag": "IA ativa"
+  },
+  "shortcuts": {
+    "title": "Atalhos Rápidos",
+    "items": {
+      "newTask": "Nova tarefa",
+      "newProject": "Novo projeto",
+      "generateReport": "Gerar relatório",
+      "daySchedule": "Agenda do dia"
+    }
+  },
+  "insights": {
+    "title": "Insights da IA",
+    "badge": "🤖 IA",
+    "label": "Recomendação inteligente",
+    "quote": "“Focar nas tarefas urgentes aumenta sua eficiência em 32% hoje.”"
+  },
+  "howItWorksIntro": {
+    "title": "Sua rotina unida em três momentos",
+    "description": "Cadastre o que precisa acontecer, deixe a IA priorizar automaticamente e acompanhe a evolução sem esforço visual."
+  },
+  "aiSection": {
+    "title": "Como nossa IA funciona",
+    "description": "Nossa inteligência artificial aprende seus padrões e prioriza automaticamente suas tarefas",
+    "cards": [
+      { "icon": "FiCalendar", "title": "Prioriza pelo prazo", "description": "Tarefas com prazos próximos aparecem primeiro automaticamente" },
+      { "icon": "FiZap", "title": "Analisa urgência", "description": "Identifica tarefas críticas baseado no contexto e importância" },
+      { "icon": "FiTag", "title": "Classifica por tipo", "description": "Agrupa tarefas similares e sugere a melhor ordem de execução" },
+      { "icon": "FiZap", "title": "Aprendizado semanal", "description": "Melhora suas sugestões a cada semana baseado nos seus hábitos" }
+    ]
+  },
+  "pricingComparison": {
+    "title": "Compare os planos",
+    "description": "Veja todas as diferenças em um só lugar",
+    "featureLabel": "Funcionalidade",
+    "headers": {
+      "free": "Grátis",
+      "pro": "Profissional",
+      "enterprise": "Empresarial"
+    },
+    "rows": {
+      "tasks": { "label": "Tarefas", "values": ["Até 50", "Ilimitadas", "Ilimitadas"] },
+      "projects": { "label": "Projetos", "values": ["3", "Ilimitados", "Ilimitados"] },
+      "ai": { "label": "IA de Priorização", "values": ["—", "Disponível", "Disponível"] },
+      "reports": { "label": "Relatórios Avançados", "values": ["Básicos", "Disponíveis", "Disponíveis"] },
+      "integrations": { "label": "Integrações", "values": ["—", "Disponíveis", "Disponíveis"] },
+      "users": { "label": "Usuários", "values": ["1", "1", "Até 10"] },
+      "admin": { "label": "Dashboard Admin", "values": ["—", "—", "Disponível"] },
+      "support": { "label": "Suporte", "values": ["Email", "Email", "Prioritário 24/7"] }
+    }
+  },
+  "loginSection": {
+    "title": "Pronto para ser mais produtivo?",
+    "description": "Junte-se a milhares de usuários que já transformaram sua produtividade com IA.",
+    "formTitle": "Criar conta grátis",
+    "emailPlaceholder": "Seu melhor e-mail",
+    "passwordPlaceholder": "Crie uma senha",
+    "submit": "🚀 Começar grátis agora",
+    "benefits": {
+      "noCard": "Não é necessário cartão de crédito",
+      "users": "+1.2k usuários ativos",
+      "rating": "4.8/5 avaliação"
+    }
+  },
+  "footer": {
+    "quickLinks": "Links Rápidos",
+    "copyright": "© 2025 Flowly. Todos os direitos reservados.",
+    "links": [
+      { "label": "Início", "href": "#hero" },
+      { "label": "Funcionalidades", "href": "#features" },
+      { "label": "Planos", "href": "#pricing" },
+      { "label": "Contato", "href": "#login" }
+    ],
+    "newsletter": {
+      "title": "Fique por dentro",
+      "description": "Receba dicas de produtividade e atualizações do Flowly",
+      "placeholder": "Seu melhor e-mail",
+      "button": "Inscrever-se",
+      "disclaimer": "Sem spam. Cancele quando quiser."
+    }
+  },
+  "newsletter": {
+    "title": "Fique por dentro das novidades",
+    "description": "Receba dicas de produtividade e atualizações do Flowly",
+    "buttonIdle": "Inscrever-se",
+    "buttonLoading": "Enviando...",
+    "buttonSuccess": "Pronto!",
+    "success": "Inscrição realizada com sucesso.",
+    "error": "Não foi possível enviar. Tente novamente.",
+    "placeholder": "Seu melhor e-mail",
+    "helper": "Sem spam. Cancele quando quiser."
+  },
+  "demoModal": {
+    "title": "Demonstração Interativa",
+    "listTitle": "Suas tarefas",
+    "taskCount": { "singular": "tarefa", "plural": "tarefas" },
+    "priorityLabel": "Alta",
+    "steps": [
+      { "title": "Crie uma tarefa", "description": "Clique no botão + para criar uma tarefa" },
+      { "title": "Defina prioridade", "description": "Escolha o que é urgente ou importante" },
+      { "title": "Agende no calendário", "description": "Selecione data e horário ideais" },
+      { "title": "Marque como concluída", "description": "Acompanhe seu progresso em tempo real" }
+    ],
+    "play": {
+      "idle": "Iniciar Demonstração",
+      "running": "Executando..."
+    },
+    "tasks": {
+      "initial": "Revisar relatório mensal",
+      "scheduledDate": "Amanhã, 10:00"
+    },
+    "empty": "Clique em \"Iniciar Demonstração\" para ver como funciona"
+  },
+  "demoWidget": {
+    "button": "Rodar demonstração",
+    "running": "Executando...",
+    "steps": [
+      "Adicionando tarefa: \"Revisar relatório mensal\"",
+      "Agendando para amanhã às 10h",
+      "Classificando como prioridade alta"
+    ],
+    "empty": "Clique em \"{button}\" para ver como funciona."
+  },
+  "floatingCta": {
+    "label": "Começar grátis"
+  },
+  "lazyImage": {
+    "fallback": "Imagem não pôde ser carregada"
+  }
+}
+

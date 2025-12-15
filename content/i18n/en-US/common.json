@@ -1,0 +1,159 @@
+{
+  "languageLabel": "English",
+  "languages": {
+    "pt-BR": "Português",
+    "en-US": "English"
+  },
+  "header": {
+    "contact": "Contact",
+    "login": "Sign in",
+    "signup": "Sign up",
+    "languageLabel": "Change language"
+  },
+  "hero": {
+    "metrics": {
+      "completed": { "label": "Completed today", "value": "12", "timestamp": "Today" },
+      "inProgress": { "label": "In progress", "value": "3", "timestamp": "Active" },
+      "pending": { "label": "Pending", "value": "5", "timestamp": "Queued" },
+      "urgent": { "label": "Urgent", "value": "2", "timestamp": "Urgent" },
+      "productivity": { "label": "Productivity", "value": "+127%", "trend": "↑ +127%" }
+    },
+    "tasks": {
+      "progress": "3 of 5 completed",
+      "addButton": "New task",
+      "completed": { "title": "Client meeting", "badge": "Completed", "detail": "Finished" },
+      "inProgress": { "title": "Monthly report", "badge": "In progress" },
+      "scheduled": { "title": "Leadership presentation", "badge": "Scheduled" }
+    },
+    "sync": "Synced",
+    "floatingTag": "AI on"
+  },
+  "shortcuts": {
+    "title": "Quick shortcuts",
+    "items": {
+      "newTask": "New task",
+      "newProject": "New project",
+      "generateReport": "Generate report",
+      "daySchedule": "Today's agenda"
+    }
+  },
+  "insights": {
+    "title": "AI insights",
+    "badge": "🤖 AI",
+    "label": "Smart recommendation",
+    "quote": "“Focusing on urgent tasks boosts your efficiency by 32% today.”"
+  },
+  "howItWorksIntro": {
+    "title": "Your routine in three clear moments",
+    "description": "Capture what needs to happen, let AI prioritize automatically, and follow the progress with zero visual strain."
+  },
+  "aiSection": {
+    "title": "How our AI works",
+    "description": "Our intelligence learns your patterns and automatically prioritizes your tasks",
+    "cards": [
+      { "icon": "FiCalendar", "title": "Prioritizes by due date", "description": "Tasks with upcoming deadlines automatically rise to the top" },
+      { "icon": "FiZap", "title": "Evaluates urgency", "description": "Understands context and importance to flag critical work" },
+      { "icon": "FiTag", "title": "Groups by type", "description": "Clusters similar tasks and suggests the best execution order" },
+      { "icon": "FiZap", "title": "Learns every week", "description": "Improves recommendations weekly based on your habits" }
+    ]
+  },
+  "pricingComparison": {
+    "title": "Compare plans",
+    "description": "See every difference in one place",
+    "featureLabel": "Feature",
+    "headers": {
+      "free": "Free",
+      "pro": "Professional",
+      "enterprise": "Business"
+    },
+    "rows": {
+      "tasks": { "label": "Tasks", "values": ["Up to 50", "Unlimited", "Unlimited"] },
+      "projects": { "label": "Projects", "values": ["3", "Unlimited", "Unlimited"] },
+      "ai": { "label": "AI prioritization", "values": ["—", "Available", "Available"] },
+      "reports": { "label": "Advanced reports", "values": ["Basic", "Available", "Available"] },
+      "integrations": { "label": "Integrations", "values": ["—", "Available", "Available"] },
+      "users": { "label": "Users", "values": ["1", "1", "Up to 10"] },
+      "admin": { "label": "Admin dashboard", "values": ["—", "—", "Available"] },
+      "support": { "label": "Support", "values": ["Email", "Email", "Priority 24/7"] }
+    }
+  },
+  "loginSection": {
+    "title": "Ready to become more productive?",
+    "description": "Join thousands of people who already transformed their productivity with AI.",
+    "formTitle": "Create a free account",
+    "emailPlaceholder": "Your best email",
+    "passwordPlaceholder": "Create a password",
+    "submit": "🚀 Start for free now",
+    "benefits": {
+      "noCard": "No credit card required",
+      "users": "+1.2k active users",
+      "rating": "4.8/5 rating"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick links",
+    "copyright": "© 2025 Flowly. All rights reserved.",
+    "links": [
+      { "label": "Home", "href": "#hero" },
+      { "label": "Features", "href": "#features" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Contact", "href": "#login" }
+    ],
+    "newsletter": {
+      "title": "Stay in the loop",
+      "description": "Receive productivity tips and Flowly updates",
+      "placeholder": "Your best email",
+      "button": "Subscribe",
+      "disclaimer": "No spam. Unsubscribe anytime."
+    }
+  },
+  "newsletter": {
+    "title": "Stay up to date",
+    "description": "Receive productivity tips and Flowly updates",
+    "buttonIdle": "Subscribe",
+    "buttonLoading": "Sending...",
+    "buttonSuccess": "Done!",
+    "success": "Subscription confirmed.",
+    "error": "We couldn’t send it. Try again.",
+    "placeholder": "Your best email",
+    "helper": "No spam. Unsubscribe anytime."
+  },
+  "demoModal": {
+    "title": "Interactive Demo",
+    "listTitle": "Your tasks",
+    "taskCount": { "singular": "task", "plural": "tasks" },
+    "priorityLabel": "High",
+    "steps": [
+      { "title": "Create a task", "description": "Click the + button to add a task" },
+      { "title": "Set a priority", "description": "Mark what is urgent or important" },
+      { "title": "Schedule on the calendar", "description": "Pick the right date and time" },
+      { "title": "Mark it as done", "description": "Track your progress in real time" }
+    ],
+    "play": {
+      "idle": "Start demo",
+      "running": "Running..."
+    },
+    "tasks": {
+      "initial": "Review monthly report",
+      "scheduledDate": "Tomorrow, 10:00 AM"
+    },
+    "empty": "Click “Start demo” to see it in action"
+  },
+  "demoWidget": {
+    "button": "Run demo",
+    "running": "Running...",
+    "steps": [
+      "Adding task: “Review monthly report”",
+      "Scheduling for tomorrow at 10 AM",
+      "Marking it as a high priority"
+    ],
+    "empty": "Click “{button}” to see it in action."
+  },
+  "floatingCta": {
+    "label": "Start for free"
+  },
+  "lazyImage": {
+    "fallback": "Image could not be loaded"
+  }
+}
+

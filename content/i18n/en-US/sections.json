@@ -1,0 +1,80 @@
+{
+  "topRibbon": { "enabled": true, "message": "Free beta for a limited time — join now!", "closeable": true },
+  "hero": {
+    "eyebrow": "A new experience",
+    "title": "See what needs your attention now, not later",
+    "highlight": "Plan, prioritize, and move forward from a high-contrast dashboard",
+    "description": "AI and accessible design to surface what matters now and show your productivity in real time.",
+    "ctaPrimary": "Watch guided demo",
+    "ctaSecondary": "Get started",
+    "social": {
+      "users": "More than 1,200 people rely on Flowly every day",
+      "rating": "Average rating of 4.8/5 across tested teams"
+    }
+  },
+  "about": {
+    "title": "From scattered tasks to a purposeful week",
+    "content": "When every meeting adds a new request, it’s easy to lose sight of what truly matters.\n\nFlowly highlights exactly what needs your attention right now with reinforced contrast and automations that eliminate manual tweaks.",
+    "image": "/about-image.png",
+    "bullets": [
+      "High-contrast interface that keeps the focus on decisive work",
+      "AI assistant that reorganizes priorities in seconds",
+      "Visual alerts for critical deadlines and dependencies",
+      "Intuitive reports that narrate your week’s results",
+      "Integrations that keep your team and tools in sync"
+    ]
+  },
+  "features": {
+    "title": "Features that truly matter",
+    "subtitle": "Connected capabilities to preserve focus, visibility, and rhythm",
+    "items": [
+      { "icon": "FiCheckSquare", "title": "Task management", "description": "Create, organize, and follow tasks with statuses and priorities.", "microBenefits": ["Cut task organization time by 40%", "AI learns your habits automatically"] },
+      { "icon": "FiCalendar", "title": "Integrated calendar", "description": "View your tasks on the calendar and receive timely reminders.", "microBenefits": ["Daily priorities suggested automatically", "Never miss an important deadline"] },
+      { "icon": "FiBarChart2", "title": "Progress reports", "description": "Track productivity with motivating, easy-to-read insights.", "microBenefits": ["See your evolution week after week", "Spot your most productive hours"] },
+      { "icon": "FiFolder", "title": "Project organization", "description": "Group tasks into projects and keep everything structured.", "microBenefits": ["Stay focused on what matters most", "Get a clear view of each project"] },
+      { "icon": "FiTag", "title": "Labels and filters", "description": "Categorize and filter tasks to find what you need instantly.", "microBenefits": ["Find any task in seconds", "Automatic organization by context"] },
+      { "icon": "FiSmartphone", "title": "Access anywhere", "description": "Automatic sync across desktop, mobile, and web.", "microBenefits": ["Instant synchronization", "Work from any device"] }
+    ]
+  },
+  "logos": { "title": "Trusted by professionals across Brazil", "items": ["TechStart", "DesignStudio", "Agência Digital", "Consultoria XYZ", "FreelaHub"] },
+  "howItWorks": {
+    "title": "How Flowly sets your pace",
+    "steps": [
+      { "icon": "FiUserPlus", "title": "Outline what needs to happen", "description": "Import tasks, connect integrations, or describe activities to our AI in seconds." },
+      { "icon": "FiPlusCircle", "title": "Receive automatic priorities", "description": "AI highlights what needs attention with clear colours and alerts aligned with your goals." },
+      { "icon": "FiTrendingUp", "title": "Monitor and adjust effortlessly", "description": "View metrics and recommendations in high-contrast cards and share them with the team." }
+    ]
+  },
+  "integrations": { "title": "Available integrations", "items": ["Google Calendar", "Notion", "Trello", "Slack", "Gmail"] },
+  "demo": { "title": "See how it works", "subtitle": "Watch the dashboard automatically surface your next step in under a minute.", "button": "View demo" },
+  "testimonials": {
+    "title": "What our users say",
+    "items": [
+      { "name": "Carolina Silva", "role": "Freelance Designer", "avatar": "", "rating": 5, "text": "Flowly helped me manage my time better and deliver projects on schedule." },
+      { "name": "Marcelo Costa", "role": "Project Manager", "avatar": "", "rating": 5, "text": "An intuitive, functional interface. I use it daily to guide my team." },
+      { "name": "Ana Paula Santos", "role": "Entrepreneur", "avatar": "", "rating": 4, "text": "Great for tracking tasks and keeping deadlines under control." },
+      { "name": "Rafael Oliveira", "role": "Full Stack Developer", "avatar": "", "rating": 5, "text": "The AI really works! I cut 40% of the time I spent organizing tasks. Highly recommended." },
+      { "name": "Juliana Ferreira", "role": "Marketing Consultant", "avatar": "", "rating": 5, "text": "Flowly learns my habits and suggests priorities automatically. It transformed my routine!" }
+    ]
+  },
+  "pricing": {
+    "title": "Plans",
+    "subtitle": "Pick the plan that fits your needs",
+    "plans": [
+      { "name": "Free", "price": "Free", "period": "", "features": ["Up to 50 tasks", "3 projects", "Basic reports"], "cta": "Start for free", "featured": false },
+      { "name": "Professional", "price": "$49", "period": "/month", "features": ["Unlimited tasks", "Unlimited projects", "Advanced reports", "Integrations"], "cta": "Subscribe to Professional", "featured": true },
+      { "name": "Business", "price": "$99", "period": "/month", "features": ["Everything in Professional", "Up to 10 users", "Admin dashboard", "Priority support"], "cta": "Talk to sales", "featured": false }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "Can I use it for free?", "a": "Yes! The free plan lets you manage up to 50 tasks and 3 projects." },
+      { "q": "Is my data secure?", "a": "Absolutely. We use encryption and secure servers to protect your information." },
+      { "q": "How does cancellation work?", "a": "You can cancel anytime with no additional fees." }
+    ]
+  },
+  "cta": { "title": "Start organizing your work today.", "subtitle": "Join thousands of people who already transformed their productivity.", "button": "Create a free account", "secondaryText": "No credit card required." }
+}
+
+

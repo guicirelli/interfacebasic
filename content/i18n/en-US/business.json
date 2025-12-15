@@ -1,0 +1,14 @@
+{
+  "brandName": "Flowly",
+  "brandTagline": "Plan your work with clarity",
+  "brandEmail": "hello@flowly.com",
+  "brandPhone": "+1 (415) 555-0101",
+  "brandLogo": "/logo.png",
+  "social": {
+    "github": "https://github.com/flowly",
+    "linkedin": "https://linkedin.com/company/flowly",
+    "twitter": "https://twitter.com/flowlyapp"
+  }
+}
+
+

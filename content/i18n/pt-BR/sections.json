@@ -1,0 +1,80 @@
+{
+  "topRibbon": { "enabled": true, "message": "Beta gratuito por tempo limitado - Participe agora!", "closeable": true },
+  "hero": {
+    "eyebrow": "Nova experiência",
+    "title": "Veja o que precisa da sua atenção agora, não depois",
+    "highlight": "Planeje, priorize e avance em um painel de alto contraste",
+    "description": "IA e design acessível para destacar o que importa agora e mostrar sua produtividade em tempo real.",
+    "ctaPrimary": "Ver demonstração guiada",
+    "ctaSecondary": "Começar",
+    "social": {
+      "users": "Mais de 1.200 pessoas trabalham com Flowly diariamente",
+      "rating": "Avaliação média de 4,8/5 nas equipes testadas"
+    }
+  },
+  "about": {
+    "title": "Do caos de tarefas à semana com propósito",
+    "content": "Quando cada reunião adiciona uma nova demanda, fica fácil perder o que tem impacto real.\n\nO Flowly destaca apenas aquilo que precisa da sua atenção agora, com contraste reforçado e automações que eliminam ajustes manuais.",
+    "image": "/about-image.png",
+    "bullets": [
+      "Interface de alto contraste com foco no que é decisivo",
+      "Assistente de IA que reorganiza prioridades em segundos",
+      "Alertas visuais para prazos e dependências críticas",
+      "Relatórios intuitivos que contam a história da sua semana",
+      "Integrações que conectam equipe e ferramentas em tempo real"
+    ]
+  },
+  "features": {
+    "title": "Funcionalidades que fazem a diferença",
+    "subtitle": "Recursos conectados para manter foco, visibilidade e ritmo",
+    "items": [
+      { "icon": "FiCheckSquare", "title": "Gerenciamento de tarefas", "description": "Crie, organize e acompanhe suas tarefas com status e prioridades.", "microBenefits": ["Redução de 40% no tempo gasto organizando tarefas", "IA aprende seus hábitos automaticamente"] },
+      { "icon": "FiCalendar", "title": "Calendário integrado", "description": "Visualize suas tarefas no calendário e receba lembretes oportunos.", "microBenefits": ["Sugerimos sua prioridade do dia automaticamente", "Nunca perca um prazo importante"] },
+      { "icon": "FiBarChart2", "title": "Relatórios de progresso", "description": "Acompanhe sua produtividade com estatísticas simples e motivadoras.", "microBenefits": ["Veja sua evolução semana a semana", "Identifique seus horários mais produtivos"] },
+      { "icon": "FiFolder", "title": "Organização por projetos", "description": "Agrupe tarefas em projetos e mantenha tudo organizado.", "microBenefits": ["Foco total no que importa", "Visão clara de cada projeto"] },
+      { "icon": "FiTag", "title": "Etiquetas e filtros", "description": "Categorize e filtre suas tarefas para encontrar o que precisa rapidamente.", "microBenefits": ["Encontre qualquer tarefa em segundos", "Organização automática por contexto"] },
+      { "icon": "FiSmartphone", "title": "Acesso em qualquer lugar", "description": "Sincronização automática entre desktop, mobile e web.", "microBenefits": ["Sincronização instantânea", "Trabalhe de qualquer dispositivo"] }
+    ]
+  },
+  "logos": { "title": "Usado por profissionais em todo o Brasil", "items": ["TechStart", "DesignStudio", "Agência Digital", "Consultoria XYZ", "FreelaHub"] },
+  "howItWorks": {
+    "title": "Como o Flowly guia seu ritmo",
+    "steps": [
+      { "icon": "FiUserPlus", "title": "Mapeie o que precisa acontecer", "description": "Importe tarefas, conecte integrações ou descreva atividades para nossa IA em segundos." },
+      { "icon": "FiPlusCircle", "title": "Receba prioridades automáticas", "description": "A IA destaca o que exige atenção com cores e alertas claros, alinhados com seus objetivos." },
+      { "icon": "FiTrendingUp", "title": "Acompanhe e ajuste com clareza", "description": "Veja métricas e recomendações em cartões de alto contraste e compartilhe com a equipe." }
+    ]
+  },
+  "integrations": { "title": "Integrações disponíveis", "items": ["Google Calendar", "Notion", "Trello", "Slack", "Gmail"] },
+  "demo": { "title": "Veja como funciona", "subtitle": "Assista ao painel destacando automaticamente o próximo passo em menos de um minuto.", "button": "Ver demonstração" },
+  "testimonials": {
+    "title": "O que dizem nossos usuários",
+    "items": [
+      { "name": "Carolina Silva", "role": "Designer Freelancer", "avatar": "", "rating": 5, "text": "O Flowly me ajudou a organizar melhor meu tempo e entregar projetos no prazo." },
+      { "name": "Marcelo Costa", "role": "Gerente de Projetos", "avatar": "", "rating": 5, "text": "Interface intuitiva e funcional. Uso todos os dias para gerenciar minha equipe." },
+      { "name": "Ana Paula Santos", "role": "Empreendedora", "avatar": "", "rating": 4, "text": "Muito útil para acompanhar tarefas e não perder prazos importantes." },
+      { "name": "Rafael Oliveira", "role": "Desenvolvedor Full Stack", "avatar": "", "rating": 5, "text": "A IA realmente funciona! Reduziu 40% do tempo que eu gastava organizando tarefas. Recomendo!" },
+      { "name": "Juliana Ferreira", "role": "Consultora de Marketing", "avatar": "", "rating": 5, "text": "O Flowly aprende meus hábitos e sugere prioridades automaticamente. Mudou minha rotina!" }
+    ]
+  },
+  "pricing": {
+    "title": "Planos",
+    "subtitle": "Escolha o plano que melhor se adapta às suas necessidades",
+    "plans": [
+      { "name": "Grátis", "price": "Grátis", "period": "", "features": ["Até 50 tarefas", "3 projetos", "Relatórios básicos"], "cta": "Começar grátis", "featured": false },
+      { "name": "Profissional", "price": "R$ 49", "period": "/mês", "features": ["Tarefas ilimitadas", "Projetos ilimitados", "Relatórios avançados", "Integrações"], "cta": "Assinar Profissional", "featured": true },
+      { "name": "Empresarial", "price": "R$ 99", "period": "/mês", "features": ["Tudo do Profissional", "Até 10 usuários", "Dashboard administrativo", "Suporte prioritário"], "cta": "Falar com vendas", "featured": false }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      { "q": "Posso usar gratuitamente?", "a": "Sim! O plano gratuito permite até 50 tarefas e 3 projetos." },
+      { "q": "Meus dados estão seguros?", "a": "Sim, utilizamos criptografia e servidores seguros para proteger suas informações." },
+      { "q": "Como funciona o cancelamento?", "a": "Você pode cancelar a qualquer momento sem taxas adicionais." }
+    ]
+  },
+  "cta": { "title": "Comece a organizar suas tarefas hoje.", "subtitle": "Junte-se a milhares de usuários que já transformaram sua produtividade.", "button": "Criar conta grátis", "secondaryText": "Não é necessário cartão de crédito." }
+}
+
+
