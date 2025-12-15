@@ -27,9 +27,7 @@ export default function Home() {
   const heroTranslation = t('hero') || {};
   const heroMetrics = heroTranslation.metrics || {};
   const heroTasksCopy = heroTranslation.tasks || {};
-  const heroListTitle = heroTranslation.listTitle || t('demoModal.listTitle') || 'Tarefas do dia';
-  const heroSyncLabel = heroTranslation.sync || 'Sincronizado';
-  const heroFloatingTag = heroTranslation.floatingTag || 'IA ativa';
+  const heroListTitle = heroTranslation.listTitle || t('demoModal.listTitle') || 'Your tasks';
   const shortcutsCopy = t('shortcuts') || {};
   const insightsCopy = t('insights') || {};
   const howIntro = t('howItWorksIntro') || {};
