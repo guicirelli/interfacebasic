@@ -34,7 +34,7 @@ export default function Footer() {
 
           {/* Contact & Social */}
           <div>
-            <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg text-gray-900">{t('header.contact') || 'Contato'}</h4>
+            <h4 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg text-gray-900">{t('header.contact') || 'Contact'}</h4>
             <p className="text-sm sm:text-base text-gray-600 mb-2">{settings?.business?.brandEmail}</p>
             <p className="text-sm sm:text-base text-gray-600 mb-4">{settings?.business?.brandPhone}</p>
             

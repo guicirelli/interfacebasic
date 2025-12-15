@@ -93,13 +93,13 @@ export default function Header() {
             {/* Botões de Contato, Login e Cadastro */}
             <div className="flex items-center space-x-2 lg:space-x-3">
               <button className="px-3 lg:px-4 py-2 text-sm lg:text-base text-gray-600 font-medium hover:text-gray-800 transition-colors">
-                {t('header.contact') || 'Contato'}
+                {t('header.contact') || 'Contact'}
               </button>
               <button className="px-3 lg:px-4 py-2 text-sm lg:text-base text-gray-600 font-medium hover:text-gray-800 transition-colors">
-                {t('header.login') || 'Entrar'}
+                {t('header.login') || 'Sign in'}
               </button>
               <button className="px-3 lg:px-4 py-2 text-sm lg:text-base bg-brand text-white rounded-lg hover:bg-brandDark transition-colors font-medium shadow-md">
-                {t('header.signup') || 'Cadastrar'}
+                {t('header.signup') || 'Sign up'}
               </button>
             </div>
           </div>
@@ -152,13 +152,13 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4 space-y-3">
             <button className="block w-full text-left px-4 py-2 text-gray-600 font-medium hover:text-gray-800 transition-colors">
-              {t('header.contact') || 'Contato'}
+              {t('header.contact') || 'Contact'}
             </button>
             <button className="block w-full text-left px-4 py-2 text-gray-600 font-medium hover:text-gray-800 transition-colors">
-              {t('header.login') || 'Entrar'}
+              {t('header.login') || 'Sign in'}
             </button>
             <button className="block w-full text-left px-4 py-2 bg-brand text-white rounded-lg hover:bg-brandDark transition-colors font-medium shadow-md">
-              {t('header.signup') || 'Cadastrar'}
+              {t('header.signup') || 'Sign up'}
             </button>
           </div>
         )}

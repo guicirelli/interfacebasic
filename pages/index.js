@@ -146,7 +146,7 @@ export default function Home() {
                           </div>
                           <div>
                             <h3 className="font-bold text-slate-900 text-sm sm:text-base md:text-lg">Dashboard Flowly</h3>
-                            <p className="text-xs text-slate-500">15 de Dezembro, 2024</p>
+                            <p className="text-xs text-slate-500">December 15, 2024</p>
                           </div>
                         </div>
                       </div>

@@ -1,74 +1,74 @@
 {
-  "topRibbon": { "enabled": true, "message": "Beta gratuito por tempo limitado - Participe agora!", "closeable": true },
+  "topRibbon": { "enabled": true, "message": "Free beta for a limited time — join now!", "closeable": true },
   "hero": {
-    "title": "Organize suas tarefas de forma inteligente.",
-    "subtitle": "Flowly ajuda você a priorizar o que importa, gerenciar seu tempo e alcançar seus objetivos com clareza.",
-    "ctaPrimary": "Começar grátis",
-    "ctaSecondary": "Ver demonstração",
+    "title": "See what needs your attention now, not later",
+    "subtitle": "Flowly helps you prioritize what matters, manage your time, and achieve your goals with clarity.",
+    "ctaPrimary": "Get started",
+    "ctaSecondary": "Watch demo",
     "image": "/hero-image.png",
-    "stats": [ { "number": "1.2k", "label": "Usuários ativos" }, { "number": "4.8", "label": "Avaliação média" } ]
+    "stats": [ { "number": "1.2k", "label": "Active users" }, { "number": "4.8", "label": "Average rating" } ]
   },
   "about": {
-    "title": "Do caos de tarefas à semana com propósito",
-    "content": "Quando cada reunião adiciona uma nova demanda, fica fácil perder o que tem impacto real.\n\nO Flowly destaca apenas aquilo que precisa da sua atenção agora, com contraste reforçado e automações que eliminam ajustes manuais.",
+    "title": "From scattered tasks to a purposeful week",
+    "content": "When every meeting adds a new request, it's easy to lose sight of what truly matters.\n\nFlowly highlights exactly what needs your attention right now with reinforced contrast and automations that eliminate manual tweaks.",
     "image": "/about-image.png",
     "bullets": [
-      "Interface de alto contraste com foco no que é decisivo",
-      "Assistente de IA que reorganiza prioridades em segundos", 
-      "Alertas visuais para prazos e dependências críticas",
-      "Relatórios intuitivos que contam a história da sua semana",
-      "Integrações que conectam equipe e ferramentas em tempo real"
+      "High-contrast interface that keeps the focus on decisive work",
+      "AI assistant that reorganizes priorities in seconds",
+      "Visual alerts for critical deadlines and dependencies",
+      "Intuitive reports that narrate your week's results",
+      "Integrations that keep your team and tools in sync"
     ]
   },
   "features": {
-    "title": "Funcionalidades que fazem a diferença",
-    "subtitle": "Recursos conectados para manter foco, visibilidade e ritmo",
+    "title": "Features that truly matter",
+    "subtitle": "Connected capabilities to preserve focus, visibility, and rhythm",
     "items": [
-      { "icon": "FiCheckSquare", "title": "Gerenciamento de tarefas", "description": "Crie, organize e acompanhe suas tarefas com status e prioridades.", "microBenefits": ["Redução de 40% no tempo gasto organizando tarefas", "IA aprende seus hábitos automaticamente"] },
-      { "icon": "FiCalendar", "title": "Calendário integrado", "description": "Visualize suas tarefas no calendário e receba lembretes oportunos.", "microBenefits": ["Sugerimos sua prioridade do dia automaticamente", "Nunca perca um prazo importante"] },
-      { "icon": "FiBarChart2", "title": "Relatórios de progresso", "description": "Acompanhe sua produtividade com estatísticas simples e motivadoras.", "microBenefits": ["Veja sua evolução semana a semana", "Identifique seus horários mais produtivos"] },
-      { "icon": "FiFolder", "title": "Organização por projetos", "description": "Agrupe tarefas em projetos e mantenha tudo organizado.", "microBenefits": ["Foco total no que importa", "Visão clara de cada projeto"] },
-      { "icon": "FiTag", "title": "Etiquetas e filtros", "description": "Categorize e filtre suas tarefas para encontrar o que precisa rapidamente.", "microBenefits": ["Encontre qualquer tarefa em segundos", "Organização automática por contexto"] },
-      { "icon": "FiSmartphone", "title": "Acesso em qualquer lugar", "description": "Sincronização automática entre desktop, mobile e web.", "microBenefits": ["Sincronização instantânea", "Trabalhe de qualquer dispositivo"] }
+      { "icon": "FiCheckSquare", "title": "Task management", "description": "Create, organize, and follow tasks with statuses and priorities.", "microBenefits": ["Cut task organization time by 40%", "AI learns your habits automatically"] },
+      { "icon": "FiCalendar", "title": "Integrated calendar", "description": "View your tasks on the calendar and receive timely reminders.", "microBenefits": ["Daily priorities suggested automatically", "Never miss an important deadline"] },
+      { "icon": "FiBarChart2", "title": "Progress reports", "description": "Track productivity with motivating, easy-to-read insights.", "microBenefits": ["See your evolution week after week", "Spot your most productive hours"] },
+      { "icon": "FiFolder", "title": "Project organization", "description": "Group tasks into projects and keep everything structured.", "microBenefits": ["Stay focused on what matters most", "Get a clear view of each project"] },
+      { "icon": "FiTag", "title": "Labels and filters", "description": "Categorize and filter tasks to find what you need instantly.", "microBenefits": ["Find any task in seconds", "Automatic organization by context"] },
+      { "icon": "FiSmartphone", "title": "Access anywhere", "description": "Automatic sync across desktop, mobile, and web.", "microBenefits": ["Instant synchronization", "Work from any device"] }
     ]
   },
-  "logos": { "title": "Usado por profissionais em todo o Brasil", "items": ["TechStart", "DesignStudio", "Agência Digital", "Consultoria XYZ", "FreelaHub"] },
+  "logos": { "title": "Trusted by professionals", "items": ["TechStart", "DesignStudio", "Digital Agency", "Consulting XYZ", "FreelaHub"] },
   "howItWorks": {
-    "title": "Como o Flowly guia seu ritmo",
+    "title": "How Flowly sets your pace",
     "steps": [
-      { "icon": "FiUserPlus", "title": "Mapeie o que precisa acontecer", "description": "Importe tarefas, conecte integrações ou descreva atividades para nossa IA em segundos." },
-      { "icon": "FiPlusCircle", "title": "Receba prioridades automáticas", "description": "A IA destaca o que exige atenção com cores e alertas claros, alinhados com seus objetivos." },
-      { "icon": "FiTrendingUp", "title": "Acompanhe e ajuste com clareza", "description": "Veja métricas e recomendações em cartões de alto contraste e compartilhe com a equipe." }
+      { "icon": "FiUserPlus", "title": "Outline what needs to happen", "description": "Import tasks, connect integrations, or describe activities to our AI in seconds." },
+      { "icon": "FiPlusCircle", "title": "Receive automatic priorities", "description": "AI highlights what needs attention with clear colours and alerts aligned with your goals." },
+      { "icon": "FiTrendingUp", "title": "Monitor and adjust effortlessly", "description": "View metrics and recommendations in high-contrast cards and share them with the team." }
     ]
   },
-  "integrations": { "title": "Integrações disponíveis", "items": ["Google Calendar", "Notion", "Trello", "Slack", "Gmail"] },
-  "demo": { "title": "Veja como funciona", "subtitle": "Assista ao painel destacando automaticamente o próximo passo em menos de um minuto.", "button": "Ver demonstração" },
+  "integrations": { "title": "Available integrations", "items": ["Google Calendar", "Notion", "Trello", "Slack", "Gmail"] },
+  "demo": { "title": "See how it works", "subtitle": "Watch the dashboard automatically surface your next step in under a minute.", "button": "View demo" },
   "testimonials": {
-    "title": "O que dizem nossos usuários",
+    "title": "What our users say",
     "items": [
-      { "name": "Carolina Silva", "role": "Designer Freelancer", "avatar": "", "rating": 5, "text": "O Flowly me ajudou a organizar melhor meu tempo e entregar projetos no prazo." },
-      { "name": "Marcelo Costa", "role": "Gerente de Projetos", "avatar": "", "rating": 5, "text": "Interface intuitiva e funcional. Uso todos os dias para gerenciar minha equipe." },
-      { "name": "Ana Paula Santos", "role": "Empreendedora", "avatar": "", "rating": 4, "text": "Muito útil para acompanhar tarefas e não perder prazos importantes." },
-      { "name": "Rafael Oliveira", "role": "Desenvolvedor Full Stack", "avatar": "", "rating": 5, "text": "A IA realmente funciona! Reduziu 40% do tempo que eu gastava organizando tarefas. Recomendo!" },
-      { "name": "Juliana Ferreira", "role": "Consultora de Marketing", "avatar": "", "rating": 5, "text": "O Flowly aprende meus hábitos e sugere prioridades automaticamente. Mudou minha rotina!" }
+      { "name": "Carolina Silva", "role": "Freelance Designer", "avatar": "", "rating": 5, "text": "Flowly helped me manage my time better and deliver projects on schedule." },
+      { "name": "Marcelo Costa", "role": "Project Manager", "avatar": "", "rating": 5, "text": "An intuitive, functional interface. I use it daily to guide my team." },
+      { "name": "Ana Paula Santos", "role": "Entrepreneur", "avatar": "", "rating": 4, "text": "Great for tracking tasks and keeping deadlines under control." },
+      { "name": "Rafael Oliveira", "role": "Full Stack Developer", "avatar": "", "rating": 5, "text": "The AI really works! I cut 40% of the time I spent organizing tasks. Highly recommended." },
+      { "name": "Juliana Ferreira", "role": "Marketing Consultant", "avatar": "", "rating": 5, "text": "Flowly learns my habits and suggests priorities automatically. It transformed my routine!" }
     ]
   },
   "pricing": {
-    "title": "Planos",
-    "subtitle": "Escolha o plano que melhor se adapta às suas necessidades",
+    "title": "Plans",
+    "subtitle": "Pick the plan that fits your needs",
     "plans": [
-      { "name": "Grátis", "price": "Grátis", "period": "", "features": ["Até 50 tarefas", "3 projetos", "Relatórios básicos"], "cta": "Começar grátis", "featured": false },
-      { "name": "Profissional", "price": "R$ 49", "period": "/mês", "features": ["Tarefas ilimitadas", "Projetos ilimitados", "Relatórios avançados", "Integrações"], "cta": "Assinar Profissional", "featured": true },
-      { "name": "Empresarial", "price": "R$ 99", "period": "/mês", "features": ["Tudo do Profissional", "Até 10 usuários", "Dashboard administrativo", "Suporte prioritário"], "cta": "Falar com vendas", "featured": false }
+      { "name": "Free", "price": "Free", "period": "", "features": ["Up to 50 tasks", "3 projects", "Basic reports"], "cta": "Start for free", "featured": false },
+      { "name": "Professional", "price": "$49", "period": "/month", "features": ["Unlimited tasks", "Unlimited projects", "Advanced reports", "Integrations"], "cta": "Subscribe to Professional", "featured": true },
+      { "name": "Business", "price": "$99", "period": "/month", "features": ["Everything in Professional", "Up to 10 users", "Admin dashboard", "Priority support"], "cta": "Talk to sales", "featured": false }
     ]
   },
   "faq": {
-    "title": "Perguntas frequentes",
+    "title": "Frequently asked questions",
     "items": [
-      { "q": "Posso usar gratuitamente?", "a": "Sim! O plano gratuito permite até 50 tarefas e 3 projetos." },
-      { "q": "Meus dados estão seguros?", "a": "Sim, utilizamos criptografia e servidores seguros para proteger suas informações." },
-      { "q": "Como funciona o cancelamento?", "a": "Você pode cancelar a qualquer momento sem taxas adicionais." }
+      { "q": "Can I use it for free?", "a": "Yes! The free plan lets you manage up to 50 tasks and 3 projects." },
+      { "q": "Is my data secure?", "a": "Absolutely. We use encryption and secure servers to protect your information." },
+      { "q": "How does cancellation work?", "a": "You can cancel anytime with no additional fees." }
     ]
   },
-  "cta": { "title": "Comece a organizar suas tarefas hoje.", "subtitle": "Junte-se a milhares de usuários que já transformaram sua produtividade.", "button": "Criar conta grátis", "secondaryText": "Não é necessário cartão de crédito." }
+  "cta": { "title": "Start organizing your work today.", "subtitle": "Join thousands of people who already transformed their productivity.", "button": "Create a free account", "secondaryText": "No credit card required." }
 }
