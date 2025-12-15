@@ -20,9 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        brand: '#6A1B32',
-        brandDark: '#42111F',
-        brandLight: '#C36B83',
+        brand: '#7F1D1D',
+        brandDark: '#5C1616',
+        brandLight: '#B91C1C',
         accent: '#0B5D56',
         accentLight: '#2DD4BF',
         slate: {
